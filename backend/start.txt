@@ -1,0 +1,4 @@
+use 
+npm run backend
+and 
+npm start for frontend
