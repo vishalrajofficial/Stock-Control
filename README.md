@@ -1,7 +1,7 @@
-## Stock Control
+# Stock Control
 This is a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application for inventory management.
 
-# Getting Started
+## Getting Started
 To get started with this project, you will need to follow these steps:
 
 Clone the repository:
@@ -16,7 +16,7 @@ Start the development server:
 `npm start`
 Open http://localhost:3000 in your browser to see the app.
 
-# Features
+## Features
 
 This web app allows users to:
 
@@ -36,7 +36,7 @@ This web app allows users to:
 -JWT - authentication
 -Axios - HTTP client
 
-# Contributing
+## Contributing
 If you want to contribute to this project, please follow these steps:
 
 Fork the repository
@@ -45,6 +45,6 @@ Make changes and commit (git commit -am 'Add your message here')
 Push to the branch (git push origin feature/your-feature-name)
 Create a pull request
 
-# License
+## License
 
 This project is licensed under the IIIT License. See the LICENSE file for more information.
