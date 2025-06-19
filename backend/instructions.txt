@@ -9,4 +9,11 @@
 #1. Create forgot Password route
 #2. Create Token Model
 #3. Create Email Sender function
-#4. Create controller function  
+#4. Create controller function
+
+// URLS
+//backend
+REACT_APP_BACKEND_URL=https://stockmaster.fly.dev
+
+// frontend
+https://stock-control-omega.vercel.app

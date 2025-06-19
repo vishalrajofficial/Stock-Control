@@ -19,13 +19,22 @@ const createProduct = asyncHandler(async (req, res) => {
     // Save image to cloudinary
     let uploadedFile;
     try {
+      console.log("Attempting to upload file:", req.file.originalname);
+      console.log("File path:", req.file.path);
+      console.log("Cloudinary config:", {
+        cloud_name: cloudinary.config().cloud_name,
+        api_key: cloudinary.config().api_key ? "***" : "missing"
+      });
+      
       uploadedFile = await cloudinary.uploader.upload(req.file.path, {
-        folder: "Pinvent App",
+        folder: "Stock Master",
         resource_type: "image",
       });
+      console.log("File uploaded successfully:", uploadedFile.secure_url);
     } catch (error) {
+      console.error("Cloudinary upload error:", error);
       res.status(500);
-      throw new Error("Image could not be uploaded");
+      throw new Error("Image could not be uploaded: " + error.message);
     }
 
     fileData = {
@@ -114,13 +123,22 @@ const updateProduct = asyncHandler(async (req, res) => {
     // Save image to cloudinary
     let uploadedFile;
     try {
+      console.log("Attempting to upload file:", req.file.originalname);
+      console.log("File path:", req.file.path);
+      console.log("Cloudinary config:", {
+        cloud_name: cloudinary.config().cloud_name,
+        api_key: cloudinary.config().api_key ? "***" : "missing"
+      });
+      
       uploadedFile = await cloudinary.uploader.upload(req.file.path, {
-        folder: "Pinvent App",
+        folder: "Stock Master",
         resource_type: "image",
       });
+      console.log("File uploaded successfully:", uploadedFile.secure_url);
     } catch (error) {
+      console.error("Cloudinary upload error:", error);
       res.status(500);
-      throw new Error("Image could not be uploaded");
+      throw new Error("Image could not be uploaded: " + error.message);
     }
 
     fileData = {

@@ -31,6 +31,17 @@ main {
 .logo {
   font-size: 30px;
   color: var(--color-white);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  
+  .logo-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
 }
 .bars {
   display: flex;
@@ -68,6 +79,7 @@ main {
   font-size: 1.2em;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .sidebar-title span {
