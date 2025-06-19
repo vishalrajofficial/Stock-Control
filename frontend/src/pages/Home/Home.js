@@ -169,7 +169,7 @@ const Home = () => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link to="/dashboard">GET STARTED</Link>
+              <Link to="/login">GET STARTED</Link>
             </motion.button>
             
             <motion.button 
@@ -177,7 +177,7 @@ const Home = () => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link to="/dashboard">Learn More</Link>
+              <Link to="/login">Learn More</Link>
             </motion.button>
           </motion.div>
           
